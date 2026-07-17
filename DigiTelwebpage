@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+  body { background-color: #000; color: #fff; font-family: Arial, sans-serif; margin: 0; scroll-behavior: smooth; }
+  .header-bar {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    border-bottom: 3px solid #b30000;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .logo { color: #b30000; font-size: 26px; font-weight: bold; letter-spacing: 1px; }
+  .nav-links { display: flex; gap: 25px; flex-wrap: wrap; }
+  .nav-links a { color: #000; font-weight: bold; text-decoration: none; border-bottom: 2px solid transparent; transition: 0.3s; }
+  .nav-links a:hover, .nav-links a.active { color: #b30000; border-bottom: 2px solid #b30000; }
+  .banner { width: 100%; display: block; border-bottom: 4px solid #b30000; margin-bottom: 20px; }
+  section { padding: 60px 40px; max-width: 1200px; margin: auto; }
+  h2 { color: #b30000; }
+  .section-img { width: 100%; border-radius: 10px; margin: 20px 0; }
+  .grid-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+  .card { position: relative; width: 280px; height: 180px; overflow: hidden; border-radius: 10px; cursor: pointer; transition: transform 0.3s; }
+  .card img { width: 100%; height: 100%; object-fit: cover; transition: 0.3s; }
+  .card:hover img { opacity: 0.3; transform: scale(1.05); }
+  .card .overlay { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; font-weight: bold; font-size: 18px; opacity: 0; transition: 0.3s; text-align: center; }
+  .card:hover .overlay { opacity: 1; }
+  footer { background-color: #000; color: #b30000; text-align: center; padding: 30px; margin-top: 40px; border-top: 2px solid #b30000; }
+  footer a { color: #b30000; margin: 0 10px; }
+  footer a:hover { color: #fff; }
+  @media (max-width: 768px) {
+    .header-bar { flex-direction: column; align-items: center; }
+    .nav-links { justify-content: center; }
+    section { padding: 30px 20px; }
+    .card { width: 90%; height: 200px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header-bar">
+  <div class="logo">DigiTel</div>
+  <div class="nav-links">
+    <a href="#Home">Home</a>
+    <a href="#AI">AI Smart Home</a>
+    <a href="#OTT">OTT</a>
+    <a href="#Services">Services</a>
+    <a href="#Contact">Contact</a>
+  </div>
+</div>
+
+
+
+<!-- Sections -->
+<section id="Home">
+<!-- Banner -->
+<img src="C:\Users\sakshipadwal\Desktop\digitel_webpage\image.png" alt="DigiTel Banner" class="banner">
+  <h2>Welcome to DigiTel</h2>
+  <p>India’s most trusted Digital Home Platform — Broadband, Surveillance, OTT, and Cybersecurity all in one app.</p>
+</section>
+
+<section id="AI">
+  <h2>AI Smart Home</h2>
+  <img src="C:\Users\sakshipadwal\Desktop\digitel_webpage\AIhome.png" alt="AI Smart Home" class="section-img">
+  <p>Experience AI-powered automation: elder monitoring, anomaly detection, and personalized digital services.</p>
+  <p>Protect and automate your home with DigiTel’s advanced solutions.</p>
+  <div class="grid-container">
+   <div class="card"><img src="C:\Users\sakshipadwal\Desktop\digitel_webpage\secure.png"><div class="overlay">🔒 Secure My Home</div></div>
+<div class="card"><img src="C:\Users\sakshipadwal\Desktop\digitel_webpage\smart.png"><div class="overlay">⚙️ Smart Automation Setup</div></div>
+    <div class="card"><img src="C:\Users\sakshipadwal\Desktop\digitel_webpage\threat.png"><div class="overlay">🛡️ Threat Alerts</div></div>
+     <div class="card"><img src="C:/Users/sakshipadwal\Desktop\digitel_webpage\elder.png"><div class="overlay">❤️ Elderly Alert Monitoring</div></div>
+  </div>
+
+</section>
+
+
+
+<section id="OTT">
+  <h2>OTT Entertainment Hub</h2>
+  <img src="C:\Users\sakshipadwal\Desktop\digitel_webpage\ot.png" alt="OTT Entertainment" class="section-img">
+  <p>Explore DigiTel’s OTT offerings — stream, discover, and enjoy entertainment your way.</p>
+  <div class="grid-container">
+    <div class="card"><img src="C:\Users\sakshipadwal\Desktop\digitel_webpage\movie.png"><div class="overlay">🎬 Latest Movies</div></div>
+    <div class="card"><img src="C:\Users\sakshipadwal\Desktop\digitel_webpage\show.png"><div class="overlay">📺 TV Shows</div></div>
+    <div class="card"><img src="C:\Users\sakshipadwal\Desktop\digitel_webpage\trend.png"><div class="overlay">⭐ Trending Now</div></div>
+    <div class="card"><img src="C:\Users\sakshipadwal\Desktop\digitel_webpage\music.png"><div class="overlay">🎧 Music & Podcasts</div></div>
+  </div>
+</section>
+
+
+
+<section id="Services">
+  <h2>Services</h2>
+  <img src="C:\Users\sakshipadwal\Desktop\digitel_webpage\serv.png" alt="Services" class="section-img">
+  <p>Expert assistance whenever you need it—quick, reliable, and hassle-free.</p>
+  <div class="grid-container">
+ 
+</section>
+
+
+<section id="Contact">
+  <h2>Contact Us</h2>
+  <p>Email: support@digitel.com</p>
+  <p>Phone: +91-12345-67890</p>
+</section>
+
+<!-- Footer -->
+<footer>
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p>DigiTel © 2026 | Powered by DigiTel</p>
+</footer>
+
+<script>
+// Highlight active nav link while scrolling
+window.addEventListener("scroll", function() {
+  let sections = document.querySelectorAll("section");
+  let navLinks = document.querySelectorAll(".nav-links a");
+  let scrollPos = window.scrollY + 100;
+
+  sections.forEach(sec => {
+    if (scrollPos >= sec.offsetTop && scrollPos < sec.offsetTop + sec.offsetHeight) {
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").substring(1) === sec.id) {
+          link.classList.add("active");
+        }
+      });
+    }
+  });
+});
+</script>
+
+</body>
+</html>
+ 
